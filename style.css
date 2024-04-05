@@ -13,7 +13,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: clamp(60px, 10vw, 184px);
+  height: clamp(60px, 7vw, 154px);
 }
 nav a {
   text-decoration: none;
@@ -204,7 +204,7 @@ section {
 
 @media screen and (min-width: 600px) {
   body {
-    margin: 20px clamp(20px, 10vw, 150px);
+    margin: 20px clamp(20px, 10vw, 140px);
   }
   main {
     display: flex;
@@ -232,11 +232,11 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
   }
   .section3__article {
-    width: clamp(350px, 25vw, 70vw);
+    width: clamp(280px, 25vw, 350px);
   }
 }
 @media screen and (min-width: 1440px) {
