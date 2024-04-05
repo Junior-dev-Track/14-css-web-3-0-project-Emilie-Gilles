@@ -105,7 +105,7 @@ section {
   margin: 10px 0;
 }
 .section1 {
-  max-width: 600px;
+  width: max(60%, 343px);
 }
 #img1 {
   width: 100%;
@@ -204,15 +204,22 @@ section {
 
 @media screen and (min-width: 600px) {
   body {
-    margin: 20px clamp(20px, 10vw, 140px);
+    margin: 20px clamp(20px, 10vw, 150px);
   }
   main {
+    max-width: 1110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     flex-wrap: wrap;
     gap: 10px;
+  }
+  .section1 {
+    min-width: 30%;
+  }
+  .section2 {
+    min-width: 20%;
   }
   .section1__text {
     margin-top: 20px;
@@ -221,7 +228,6 @@ section {
     justify-content: space-between;
   }
   .section1__text__content {
-    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -229,6 +235,7 @@ section {
   }
 
   .section3 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -241,6 +248,6 @@ section {
 }
 @media screen and (min-width: 1440px) {
   .section1 {
-    max-width: 730px;
+    min-width: 60%;
   }
 }
